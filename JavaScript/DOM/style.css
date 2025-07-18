@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  flex-direction: column; /* or 'row' if you want them side by side */
+  align-items: center;     /* centers horizontally */
+  justify-content: center; /* centers vertically */
+  height: 100vh;           /* full viewport height */
+  margin: 0;               /* remove default margin */
+  background-color: black;
+  color: white;
+}
+
+
+#btn-stop{
+  background-color: green;
+  color : black;
+}
+
+#btn-start{
+  background-color: green;
+  color : black;
+}
+
+.btn-red{
+  background-color: red !important;
+  color: white !important;
+}
+
+.btn-green{
+  background-color: green !important;
+  color: black !important;
+}
+
+.btn-blue{
+  background-color: blue !important;
+  color: white !important;
+}
+
+.btn-yellow{
+  background-color: yellow!important;
+  color: black !important;
+}
+
+.btn-magneta{
+  background-color: magenta !important;
+  color: black !important;
+}
+
+
+.input{
+  margin-top: 1cm;
+}
+
+.title{
+  color: rgb(50, 227, 218);
+}
+
+#parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*height: 100vh; /* full screen height */
+  background-color: #f0f0f0; /* light background */
+}
+
+.card-container {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card-container span {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}

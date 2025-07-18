@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>WINDOW OBJECT</h1>
+  <div class="container">
+    <button id="showurl" class="button">SHOW CURRENT URL</button>
+    <button id="redirect">ReDirect to Google</button>
+    <button id="screeninfo">Show Screen Information</button>
+    <button id="showalert" onclick="showalert()">ALERT BOX</button>
+    <button id="showconfirm" onclick="showconfirm()">CONFIRM BOX</button>
+    <button id="showprompt" onclick="showprompt()">PROMPT BOX</button>
+  </div>
+
+  <script>
+    var name = "Anurag";
+    console.log(window);
+    console.log(name);
+    console.log(navigator.onLine);  //true if i am online and false if i am offline
+
+    function showalert(){
+      window.alert("ALERT MESSAGE");
+    }
+    // console.log(window.location.href);
+
+    function showconfirm(){
+      const res = confirm("Do you want to visit Google?")
+      if(res){
+        window.location.href = "https://google.com"
+      }
+    }
+
+    function showprompt(){
+      const result = prompt("Are you 18 or older?");
+      if(result >= 18){
+        alert("You are eligible to use the website");
+      }else{
+        alert("Sorry! You are not eligible to use the website");
+      }
+    }
+  </script>
+</body>
+</html>
+
